@@ -1,13 +1,9 @@
-// This script handles form submission
+// JavaScript for interactive elements (like the nav menu toggle)
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Simulate form submission
-    alert('Message sent successfully!');
-
-    // Clear the form fields
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
+    navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('nav__menu--open');
+    });
 });

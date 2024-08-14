@@ -5,64 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css"> <!-- Corrected CSS link -->
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    <!--===== HEADER =====-->
+    <header class="l-header">
         <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Your Name</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
             </nav>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a web developer passionate about creating beautiful and functional websites. I have experience in various web technologies and love to learn new things.</p>
-        </div>
-    </section>
+    <!--===== MAIN CONTENT =====-->
+    <main class="l-main">
+        <!--===== ABOUT SECTION =====-->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm a web developer passionate about creating beautiful and functional websites. I have experience in various web technologies and love to learn new things.</p>
+            </div>
+        </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2</p>
-                    <a href="#" class="btn">View Project</a>
+        <!--===== PROJECTS SECTION =====-->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>Description of Project 1</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Description of Project 2</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <!-- Add more project cards as needed -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+        <!--===== CONTACT SECTION =====-->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <footer>
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
         <div class="container">
             <p>&copy; 2024 My Portfolio. All rights reserved.</p>
         </div>
     </footer>
 
+    <!--===== MAIN JS =====-->
     <script src="js/scripts.js"></script> <!-- Corrected JS link -->
 </body>
 </html>
