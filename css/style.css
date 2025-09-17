@@ -10222,4 +10222,131 @@ a, button, .btn {
   font-size: 1.2rem;
 }
 
+/* Compact Design for Better Readability */
+
+/* Reduce hero section height */
+.hero-wrap {
+  min-height: 60vh !important;
+  padding: 4rem 0;
+}
+
+.hero-wrap.js-fullheight {
+  height: 60vh !important;
+}
+
+/* Compact section spacing */
+.ftco-section {
+  padding: 3rem 0 !important;
+}
+
+.ftco-section.ftco-no-pb {
+  padding-bottom: 1rem !important;
+}
+
+.ftco-section.ftco-no-pt {
+  padding-top: 1rem !important;
+}
+
+/* Compact project cards */
+.services-1 {
+  margin-bottom: 1.5rem !important;
+  padding: 1.5rem !important;
+}
+
+/* Compact resume section */
+.resume-wrap {
+  margin-bottom: 1rem !important;
+  padding: 1.5rem !important;
+}
+
+/* Compact headings */
+.heading-section {
+  margin-bottom: 2rem !important;
+}
+
+/* Compact contact section */
+.contact-info .box {
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Compact footer */
+.ftco-footer {
+  padding: 2rem 0 !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-wrap {
+    min-height: 50vh !important;
+    height: 50vh !important;
+    padding: 2rem 0;
+  }
+
+  .ftco-section {
+    padding: 2rem 0 !important;
+  }
+
+  .services-1 {
+    margin-bottom: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  .resume-wrap {
+    padding: 1rem !important;
+  }
+
+  .contact-info .box {
+    padding: 1rem !important;
+  }
+
+  .hero-wrap .btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  h1.hero-title {
+    font-size: 2rem !important;
+  }
+
+  .subheading {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-wrap {
+    min-height: 45vh !important;
+    height: 45vh !important;
+  }
+
+  .services-1 {
+    padding: 0.8rem !important;
+  }
+
+  .services-1 h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .services-1 p {
+    font-size: 0.85rem !important;
+  }
+
+  h1.hero-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* Make project section more prominent */
+#project-section {
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Compact navigation */
+.ftco-navbar-light {
+  padding: 0.5rem 0 !important;
+}
+
 /* ===== END ELEGANT IMPROVEMENTS ===== */
