@@ -9139,8 +9139,8 @@ textarea.form-control {
       padding-bottom: 5em; } }
 
 .ftco-animate {
-  opacity: 0;
-  visibility: hidden; }
+  opacity: 1;
+  visibility: visible; }
 
 .bg-primary {
   background: #7aff14 !important; }
@@ -10249,6 +10249,15 @@ a, button, .btn {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(100, 255, 218, 0.4);
+}
+
+/* Fix for animation elements visibility */
+.ftco-animate,
+.ftco-section .ftco-animate,
+.resume-wrap,
+.services-1 {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* ===== END ELEGANT IMPROVEMENTS ===== */
