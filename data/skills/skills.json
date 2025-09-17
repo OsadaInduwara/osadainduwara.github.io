@@ -1,0 +1,40 @@
+[
+  {
+    "category": "Frontend Development",
+    "skills": [
+      {"name": "React", "icon": "react.png", "level": 85},
+      {"name": "HTML", "icon": "html.png", "level": 90},
+      {"name": "CSS", "icon": "css.png", "level": 85},
+      {"name": "Bootstrap", "icon": "bootstrap.png", "level": 80}
+    ]
+  },
+  {
+    "category": "Backend Development",
+    "skills": [
+      {"name": "Node.js", "icon": "node.png", "level": 80},
+      {"name": "Django", "icon": "django.png", "level": 75},
+      {"name": "Python", "icon": "python.png", "level": 90}
+    ]
+  },
+  {
+    "category": "Mobile Development",
+    "skills": [
+      {"name": "Flutter", "icon": "flutter.png", "level": 75},
+      {"name": "Dart", "icon": "dart.png", "level": 70}
+    ]
+  },
+  {
+    "category": "Database & Cloud",
+    "skills": [
+      {"name": "MongoDB", "icon": "mongo.png", "level": 80},
+      {"name": "Firebase", "icon": "firebase.png", "level": 75},
+      {"name": "Docker", "icon": "docker.png", "level": 70}
+    ]
+  },
+  {
+    "category": "Design",
+    "skills": [
+      {"name": "Photoshop", "icon": "photoshop.png", "level": 70}
+    ]
+  }
+]
