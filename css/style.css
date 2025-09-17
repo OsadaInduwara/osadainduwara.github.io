@@ -9764,16 +9764,21 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
-  font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
-  line-height: 1.7;
-  color: #e8e8e8;
-  overflow-x: hidden;
+/* Enhanced background without overriding body completely */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.3) 0%, rgba(44, 44, 44, 0.3) 100%);
+  pointer-events: none;
+  z-index: -1;
 }
 
-/* Modern Typography Hierarchy */
-h1, h2, h3, h4, h5, h6 {
+/* Modern Typography Hierarchy - Less aggressive overrides */
+.elegant-text h1, .elegant-text h2, .elegant-text h3, .elegant-text h4, .elegant-text h5, .elegant-text h6 {
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 1rem;
@@ -9781,7 +9786,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-h1 {
+h1.hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
   background: linear-gradient(135deg, #64ffda 0%, #7aff14 100%);
@@ -9790,13 +9795,13 @@ h1 {
   background-clip: text;
 }
 
-h2 {
+h2.section-heading {
   font-size: clamp(2rem, 4vw, 3rem);
   color: #ffffff;
   position: relative;
 }
 
-h2::after {
+h2.section-heading::after {
   content: '';
   position: absolute;
   bottom: -8px;
