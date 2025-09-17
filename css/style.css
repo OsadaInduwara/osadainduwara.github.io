@@ -10197,4 +10197,29 @@ a, button, .btn {
   visibility: visible !important;
 }
 
+/* Hero Section GitHub Button */
+.hero-wrap .btn-primary {
+  background: linear-gradient(135deg, #64ffda 0%, #7aff14 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.3);
+}
+
+.hero-wrap .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(100, 255, 218, 0.4);
+  background: linear-gradient(135deg, #7aff14 0%, #64ffda 100%);
+}
+
+.hero-wrap .btn-primary i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
 /* ===== END ELEGANT IMPROVEMENTS ===== */
