@@ -1,1228 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Osada Induwara | AI Engineer & Full Stack Developer</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Portfolio of Osada Induwara Gallaba - AI Engineer, Machine Learning Specialist, and Full Stack Developer from Sri Lanka." />
-    <meta name="keywords" content="AI Engineer, Machine Learning, Python, Full Stack Developer, Sri Lanka, Portfolio" />
-    <meta name="author" content="Osada Induwara Gallaba" />
 
-    <meta property="og:title" content="Osada Induwara | AI Engineer Portfolio" />
-    <meta property="og:description" content="AI Engineer & Full Stack Developer specializing in Machine Learning, LLMs, and Web Development" />
-    <meta property="og:type" content="website" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="icon" href="images/cv.png" />
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      /* Modern Portfolio Enhancements */
-      :root {
-        --primary: #7aff14;
-        --primary-light: #64ffda;
-        --bg-dark: #0a0a0a;
-        --bg-card: #121212;
-        --bg-card-hover: #1a1a1a;
-        --text-primary: #ffffff;
-        --text-secondary: #b0b0b0;
-        --text-muted: #707070;
-        --gradient-primary: linear-gradient(135deg, #64ffda 0%, #7aff14 100%);
-        --shadow-glow: 0 0 30px rgba(122, 255, 20, 0.2);
-      }
-
-      body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        background: var(--bg-dark);
-        overflow-x: hidden;
-      }
-
-      /* Navbar Enhancements */
-      .ftco-navbar-light {
-        background: rgba(10, 10, 10, 0.95) !important;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(122, 255, 20, 0.1);
-        padding: 0.8rem 0 !important;
-        transition: all 0.3s ease;
-      }
-
-      .ftco-navbar-light .navbar-brand {
-        font-size: 1.6rem;
-        font-weight: 800;
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        letter-spacing: -0.5px;
-      }
-
-      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-        color: var(--text-secondary) !important;
-        font-weight: 500;
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem !important;
-        transition: all 0.3s ease;
-      }
-
-      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-        color: var(--primary) !important;
-      }
-
-      /* Hero Section */
-      .hero-wrap {
-        min-height: 100vh !important;
-        height: 100vh !important;
-        background: radial-gradient(ellipse at 50% 0%, rgba(122, 255, 20, 0.08) 0%, transparent 60%),
-                    radial-gradient(ellipse at 80% 80%, rgba(100, 255, 218, 0.05) 0%, transparent 40%),
-                    var(--bg-dark);
-        display: flex;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hero-wrap::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237aff14' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        pointer-events: none;
-        opacity: 0.5;
-      }
-
-      .hero-content {
-        position: relative;
-        z-index: 2;
-      }
-
-      .hero-subtitle {
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 1rem;
-      }
-
-      .hero-title {
-        font-size: clamp(2.5rem, 8vw, 4.5rem);
-        font-weight: 900;
-        color: var(--text-primary);
-        line-height: 1.1;
-        margin-bottom: 1.5rem;
-        letter-spacing: -2px;
-      }
-
-      .hero-description {
-        font-size: 1.2rem;
-        color: var(--text-secondary);
-        max-width: 500px;
-        margin: 0 auto 2rem;
-        line-height: 1.6;
-      }
-
-      .hero-buttons {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .btn-glow {
-        background: var(--gradient-primary);
-        border: none;
-        border-radius: 50px;
-        padding: 1rem 2.5rem;
-        font-weight: 600;
-        font-size: 0.95rem;
-        color: #000;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0 8px 30px rgba(122, 255, 20, 0.3);
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .btn-glow:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 40px rgba(122, 255, 20, 0.4);
-        color: #000;
-        text-decoration: none;
-      }
-
-      .btn-outline-glow {
-        background: transparent;
-        border: 2px solid var(--primary);
-        border-radius: 50px;
-        padding: 1rem 2.5rem;
-        font-weight: 600;
-        font-size: 0.95rem;
-        color: var(--primary);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .btn-outline-glow:hover {
-        background: var(--primary);
-        color: #000;
-        text-decoration: none;
-        transform: translateY(-3px);
-      }
-
-      /* Section Styling */
-      .section-header {
-        text-align: center;
-        margin-bottom: 4rem;
-      }
-
-      .section-label {
-        font-size: 0.85rem;
-        font-weight: 600;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: var(--primary);
-        margin-bottom: 1rem;
-      }
-
-      .section-title {
-        font-size: 2.5rem;
-        font-weight: 800;
-        color: var(--text-primary);
-        letter-spacing: -1px;
-      }
-
-      /* About Section */
-      .about-section {
-        padding: 6rem 0;
-        background: var(--bg-dark);
-      }
-
-      .about-image-container {
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-      }
-
-      .about-image {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-        border-radius: 20px;
-        filter: grayscale(20%);
-        transition: all 0.5s ease;
-      }
-
-      .about-image:hover {
-        filter: grayscale(0%);
-        transform: scale(1.02);
-      }
-
-      .about-image-container::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(135deg, rgba(122, 255, 20, 0.1) 0%, transparent 60%);
-        border-radius: 20px;
-        pointer-events: none;
-      }
-
-      .about-content {
-        padding: 2rem 0;
-      }
-
-      .about-title {
-        font-size: 2.5rem;
-        font-weight: 800;
-        color: var(--text-primary);
-        margin-bottom: 1.5rem;
-        letter-spacing: -1px;
-      }
-
-      .about-text {
-        color: var(--text-secondary);
-        font-size: 1.05rem;
-        line-height: 1.8;
-        margin-bottom: 2rem;
-      }
-
-      .info-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .info-list li {
-        display: flex;
-        padding: 1rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        font-size: 1rem;
-      }
-
-      .info-list li:last-child {
-        border-bottom: none;
-      }
-
-      .info-label {
-        min-width: 120px;
-        color: var(--primary);
-        font-weight: 600;
-      }
-
-      .info-value {
-        color: var(--text-secondary);
-      }
-
-      /* Projects Section */
-      .projects-section {
-        padding: 6rem 0;
-        background: linear-gradient(180deg, var(--bg-dark) 0%, #0d0d0d 100%);
-      }
-
-      .project-card {
-        background: var(--bg-card);
-        border-radius: 20px;
-        padding: 2rem;
-        height: 100%;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .project-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: var(--gradient-primary);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      .project-card:hover {
-        transform: translateY(-10px);
-        border-color: rgba(122, 255, 20, 0.2);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), var(--shadow-glow);
-      }
-
-      .project-card:hover::before {
-        opacity: 1;
-      }
-
-      .project-icon {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 1.5rem;
-        border-radius: 16px;
-        object-fit: cover;
-        background: rgba(122, 255, 20, 0.1);
-        padding: 10px;
-      }
-
-      .project-title {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: var(--text-primary);
-        margin-bottom: 0.75rem;
-        line-height: 1.3;
-      }
-
-      .project-tech {
-        font-size: 0.85rem;
-        font-weight: 600;
-        color: var(--primary);
-        margin-bottom: 1rem;
-      }
-
-      .project-description {
-        color: var(--text-secondary);
-        font-size: 0.95rem;
-        line-height: 1.6;
-        flex-grow: 1;
-      }
-
-      /* Resume PDF Section */
-      .resume-pdf-section {
-        padding: 6rem 0;
-        background: var(--bg-dark);
-      }
-
-      .pdf-container {
-        background: var(--bg-card);
-        border-radius: 20px;
-        padding: 1.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        margin-bottom: 2rem;
-      }
-
-      .pdf-viewer {
-        width: 100%;
-        height: 600px;
-        border: none;
-        border-radius: 12px;
-      }
-
-      .resume-download-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-
-      /* Skills Section */
-      .skills-section {
-        padding: 6rem 0;
-        background: linear-gradient(180deg, #0d0d0d 0%, var(--bg-dark) 100%);
-      }
-
-      .skill-category {
-        margin-bottom: 2.5rem;
-      }
-
-      .skill-category-title {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: var(--primary);
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .skill-category-title::before {
-        content: '';
-        display: inline-block;
-        width: 4px;
-        height: 20px;
-        background: var(--gradient-primary);
-        border-radius: 2px;
-      }
-
-      .skill-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-      }
-
-      .skill-tag {
-        background: var(--bg-card);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        color: var(--text-secondary);
-        padding: 0.5rem 1rem;
-        border-radius: 25px;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
-      }
-
-      .skill-tag:hover {
-        border-color: var(--primary);
-        color: var(--primary);
-        transform: translateY(-2px);
-      }
-
-      /* Resume Timeline Section */
-      .resume-section {
-        padding: 6rem 0;
-        background: var(--bg-dark);
-      }
-
-      .resume-nav {
-        position: sticky;
-        top: 100px;
-      }
-
-      .resume-nav-link {
-        display: block;
-        padding: 0.75rem 1.5rem;
-        color: var(--text-muted);
-        font-weight: 500;
-        border-left: 3px solid transparent;
-        transition: all 0.3s ease;
-        text-decoration: none;
-        margin-bottom: 0.5rem;
-      }
-
-      .resume-nav-link:hover,
-      .resume-nav-link.active {
-        color: var(--primary);
-        border-left-color: var(--primary);
-        background: rgba(122, 255, 20, 0.05);
-        text-decoration: none;
-      }
-
-      .resume-card {
-        background: var(--bg-card);
-        border-radius: 16px;
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        transition: all 0.3s ease;
-      }
-
-      .resume-card:hover {
-        border-color: rgba(122, 255, 20, 0.2);
-        transform: translateX(5px);
-      }
-
-      .resume-icon {
-        width: 50px;
-        height: 50px;
-        background: var(--gradient-primary);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        margin-right: 1rem;
-        flex-shrink: 0;
-      }
-
-      .resume-content h3 {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: var(--text-primary);
-        margin-bottom: 0.25rem;
-      }
-
-      .resume-content .position {
-        color: var(--primary);
-        font-weight: 600;
-        font-size: 0.95rem;
-        margin-bottom: 0.5rem;
-      }
-
-      .resume-content p {
-        color: var(--text-secondary);
-        margin-bottom: 0.25rem;
-        font-size: 0.9rem;
-      }
-
-      .resume-date {
-        background: rgba(122, 255, 20, 0.1);
-        color: var(--primary);
-        padding: 0.25rem 0.75rem;
-        border-radius: 15px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        display: inline-block;
-        margin-top: 0.5rem;
-      }
-
-      /* Contact Section */
-      .contact-section {
-        padding: 6rem 0;
-        background: linear-gradient(180deg, var(--bg-dark) 0%, #050505 100%);
-      }
-
-      .contact-card {
-        background: var(--bg-card);
-        border-radius: 20px;
-        padding: 2rem;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        transition: all 0.3s ease;
-        height: 100%;
-      }
-
-      .contact-card:hover {
-        border-color: rgba(122, 255, 20, 0.2);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow-glow);
-      }
-
-      .contact-icon {
-        width: 60px;
-        height: 60px;
-        background: var(--gradient-primary);
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        margin: 0 auto 1rem;
-      }
-
-      .contact-card h3 {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: var(--text-primary);
-        margin-bottom: 0.5rem;
-      }
-
-      .contact-card p {
-        color: var(--text-secondary);
-        font-size: 0.95rem;
-      }
-
-      .contact-card a {
-        color: var(--text-secondary);
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .contact-card a:hover {
-        color: var(--primary);
-      }
-
-      /* Footer */
-      .footer {
-        background: #050505;
-        padding: 3rem 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-      }
-
-      .footer-brand {
-        font-size: 1.5rem;
-        font-weight: 800;
-        background: var(--gradient-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 1rem;
-      }
-
-      .footer-text {
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .social-links {
-        display: flex;
-        gap: 1rem;
-      }
-
-      .social-link {
-        width: 45px;
-        height: 45px;
-        background: var(--bg-card);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--text-secondary);
-        font-size: 1.2rem;
-        transition: all 0.3s ease;
-        text-decoration: none;
-      }
-
-      .social-link:hover {
-        background: var(--gradient-primary);
-        color: #000;
-        transform: translateY(-3px);
-        text-decoration: none;
-      }
-
-      .footer-links h4 {
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--text-primary);
-        margin-bottom: 1rem;
-      }
-
-      .footer-links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .footer-links li {
-        margin-bottom: 0.5rem;
-      }
-
-      .footer-links a {
-        color: var(--text-muted);
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.3s ease;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .footer-links a:hover {
-        color: var(--primary);
-      }
-
-      .footer-bottom {
-        text-align: center;
-        padding-top: 2rem;
-        margin-top: 2rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-      }
-
-      .footer-bottom p {
-        color: var(--text-muted);
-        font-size: 0.85rem;
-      }
-
-      /* Animations */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .animate-fade-in {
-        animation: fadeInUp 0.8s ease forwards;
-      }
-
-      .delay-1 { animation-delay: 0.1s; }
-      .delay-2 { animation-delay: 0.2s; }
-      .delay-3 { animation-delay: 0.3s; }
-      .delay-4 { animation-delay: 0.4s; }
-
-      /* Responsive */
-      @media (max-width: 768px) {
-        .hero-wrap {
-          min-height: 80vh !important;
-          height: auto !important;
-          padding: 8rem 0 4rem;
-        }
-
-        .hero-title {
-          font-size: 2.5rem;
-        }
-
-        .hero-description {
-          font-size: 1rem;
-        }
-
-        .hero-buttons {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .about-image {
-          height: 300px;
-          margin-bottom: 2rem;
-        }
-
-        .pdf-viewer {
-          height: 400px;
-        }
-
-        .project-card {
-          margin-bottom: 1.5rem;
-        }
-
-        .section-title {
-          font-size: 2rem;
-        }
-
-        .resume-nav {
-          position: relative;
-          top: 0;
-          margin-bottom: 2rem;
-        }
-      }
-
-      /* Scrollbar Styling */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: var(--bg-dark);
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: var(--primary);
-        border-radius: 4px;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: var(--primary-light);
-      }
-
-      /* Selection */
-      ::selection {
-        background: var(--primary);
-        color: #000;
-      }
-    </style>
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Osada.dev</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-            <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-wrap" id="home-section">
-      <div class="container">
-        <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
-          <div class="col-lg-10 col-md-12 text-center hero-content">
-            <p class="hero-subtitle animate-fade-in">AI Engineer & Full Stack Developer</p>
-            <h1 class="hero-title animate-fade-in delay-1">Osada Induwara<br/>Gallaba</h1>
-            <p class="hero-description animate-fade-in delay-2">Building intelligent solutions with Machine Learning, LLMs, and modern web technologies. Passionate about creating impactful AI-driven applications.</p>
-            <div class="hero-buttons animate-fade-in delay-3">
-              <a href="https://github.com/OsadaInduwara?tab=repositories" target="_blank" class="btn-glow">
-                <span class="icon-github"></span> View GitHub
-              </a>
-              <a href="#about-section" class="btn-outline-glow">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-            <div class="about-image-container">
-              <img src="images/about.png" alt="Osada Induwara" class="about-image" />
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-6">
-            <div class="about-content">
-              <p class="section-label">Get to know me</p>
-              <h2 class="about-title">About Me</h2>
-              <p class="about-text">
-                I am an AI Engineer and Full Stack Developer from Sri Lanka, specializing in Machine Learning, 
-                Natural Language Processing, and building scalable web applications. With expertise in Python, 
-                TensorFlow, and modern frameworks, I create intelligent solutions that solve real-world problems.
-              </p>
-              <ul class="info-list">
-                <li>
-                  <span class="info-label">Name:</span>
-                  <span class="info-value">Osada Induwara Gallaba</span>
-                </li>
-                <li>
-                  <span class="info-label">Email:</span>
-                  <span class="info-value">ingallaba@gmail.com</span>
-                </li>
-                <li>
-                  <span class="info-label">Phone:</span>
-                  <span class="info-value">+94 77 2565 240</span>
-                </li>
-                <li>
-                  <span class="info-label">Location:</span>
-                  <span class="info-value">Makola, Sri Lanka</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects-section" id="projects-section">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">My Work</p>
-          <h2 class="section-title">Featured Projects</h2>
-        </div>
-        <div class="row">
-          <!-- Project 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="project-card">
-              <img src="images/icons/fraud-detection.png" alt="Fraud Detection" class="project-icon" />
-              <h3 class="project-title">Fraud Detection & Electricity Forecasting</h3>
-              <p class="project-tech">Python • Machine Learning • Time Series</p>
-              <p class="project-description">Developed predictive models to detect fraudulent activities and forecast electricity usage using time series analysis and machine learning algorithms.</p>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="project-card">
-              <img src="images/icons/career-guidance.png" alt="Career Guidance" class="project-icon" />
-              <h3 class="project-title">Career Guidance System</h3>
-              <p class="project-tech">Python • ML • Web Development</p>
-              <p class="project-description">Built an intelligent career guidance system that uses machine learning to suggest suitable career paths based on user skills and preferences.</p>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="project-card">
-              <img src="images/icons/deployment-pipeline.png" alt="ML Pipeline" class="project-icon" />
-              <h3 class="project-title">Automated ML Deployment Pipeline</h3>
-              <p class="project-tech">Docker • Jenkins • AWS SageMaker</p>
-              <p class="project-description">Developed an automated CI/CD pipeline for deploying machine learning models in production using Docker, Jenkins, and AWS SageMaker.</p>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="project-card">
-              <img src="images/icons/chatbot-rag.png" alt="Chatbot RAG" class="project-icon" />
-              <h3 class="project-title">Chatbot Applications with RAG</h3>
-              <p class="project-tech">Python • LangChain • LLM</p>
-              <p class="project-description">Created chatbot applications utilizing retrieval-augmented generation (RAG) techniques for accurate and context-aware responses.</p>
-            </div>
-          </div>
-          <!-- Project 5 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="project-card">
-              <img src="images/icons/dashboard-webapp.png" alt="Dashboard" class="project-icon" />
-              <h3 class="project-title">Dashboard Web Application</h3>
-              <p class="project-tech">React • Django • Data Visualization</p>
-              <p class="project-description">Designed and implemented a comprehensive web application to visualize data insights with React frontend and Django backend.</p>
-            </div>
-          </div>
-          <!-- Project 6 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="project-card">
-              <img src="images/icons/portfolio-webapp.png" alt="Portfolio" class="project-icon" />
-              <h3 class="project-title">Portfolio Web Application</h3>
-              <p class="project-tech">React • Django • Full Stack</p>
-              <p class="project-description">Currently developing a personal portfolio web application using React and Django, showcasing projects and professional experience.</p>
-            </div>
-          </div>
-          <!-- Project 7 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="project-card">
-              <img src="images/icons/farming-mobile.png" alt="Farming App" class="project-icon" />
-              <h3 class="project-title">Mobile App for Sri Lankan Farmers</h3>
-              <p class="project-tech">Flutter • Firebase • Agriculture</p>
-              <p class="project-description">Developing a mobile application to assist Sri Lankan farmers with agricultural practices using Flutter for cross-platform development.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume PDF Section -->
-    <section class="resume-pdf-section" id="resume-pdf-section">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">Download</p>
-          <h2 class="section-title">My Resume</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="pdf-container">
-              <iframe src="images/resume/osada-ai-eng.pdf" class="pdf-viewer" title="Resume PDF"></iframe>
-            </div>
-            <div class="text-center">
-              <a href="images/resume/osada-ai-eng.pdf" download class="btn-glow resume-download-btn">
-                <span class="icon-download"></span> Download Resume
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Timeline Section -->
-    <section class="resume-section" id="resume-section">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">My Journey</p>
-          <h2 class="section-title">Education & Experience</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <nav class="resume-nav">
-              <a href="#education" class="resume-nav-link active">Education</a>
-              <a href="#experience" class="resume-nav-link">Experience</a>
-            </nav>
-          </div>
-          <div class="col-md-9">
-            <!-- Education -->
-            <div id="education" class="mb-5">
-              <h3 class="mb-4" style="color: var(--primary); font-weight: 700;">Education</h3>
-              
-              <div class="resume-card d-flex">
-                <div class="resume-icon">
-                  <span class="icon-graduation-cap" style="color: #000;"></span>
-                </div>
-                <div class="resume-content">
-                  <h3>University of Wolverhampton</h3>
-                  <p class="position">Bachelor of Science</p>
-                  <p><strong>Computer Science (Software Engineering)</strong></p>
-                  <p>Second Class (2nd Division)</p>
-                  <p>Sri Lanka</p>
-                </div>
-              </div>
-
-              <div class="resume-card d-flex">
-                <div class="resume-icon">
-                  <span class="icon-book" style="color: #000;"></span>
-                </div>
-                <div class="resume-content">
-                  <h3>Institute of Technology, University of Moratuwa</h3>
-                  <p class="position">National Diploma in Technology (NDT)</p>
-                  <p><strong>Information Technology</strong></p>
-                  <p>Sri Lanka</p>
-                </div>
-              </div>
-
-              <div class="resume-card d-flex">
-                <div class="resume-icon">
-                  <span class="icon-book" style="color: #000;"></span>
-                </div>
-                <div class="resume-content">
-                  <h3>GCE Advanced Level</h3>
-                  <p class="position">Physical Science Stream</p>
-                  <p><strong>Combined Mathematics, Chemistry, Physics</strong></p>
-                  <p>Sri Lanka</p>
-                  <span class="resume-date">2017</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Experience -->
-            <div id="experience">
-              <h3 class="mb-4" style="color: var(--primary); font-weight: 700;">Experience</h3>
-              
-              <div class="resume-card d-flex">
-                <div class="resume-icon">
-                  <span class="icon-briefcase" style="color: #000;"></span>
-                </div>
-                <div class="resume-content">
-                  <h3>Freelance Software Developer</h3>
-                  <p class="position">Full Stack Development</p>
-                  <p><strong>Machine Learning & Web Development Projects</strong></p>
-                  <p>Developed various ML models and web applications for clients, focusing on fraud detection, career guidance systems, and automated deployment pipelines.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills-section" id="skills-section">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">What I Know</p>
-          <h2 class="section-title">Skills & Technologies</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="skill-category">
-              <h4 class="skill-category-title">Programming Languages</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">R</span>
-                <span class="skill-tag">Dart</span>
-                <span class="skill-tag">SQL</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h4 class="skill-category-title">AI/ML Frameworks</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">scikit-learn</span>
-                <span class="skill-tag">Keras</span>
-                <span class="skill-tag">NLTK</span>
-                <span class="skill-tag">H2O</span>
-                <span class="skill-tag">Hugging Face</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h4 class="skill-category-title">Generative AI Tools</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">GPT-3.5 Turbo</span>
-                <span class="skill-tag">LLaMA</span>
-                <span class="skill-tag">Claude</span>
-                <span class="skill-tag">Gemini API</span>
-                <span class="skill-tag">Grok</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h4 class="skill-category-title">MLOps & Deployment</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">AWS SageMaker</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Jenkins</span>
-                <span class="skill-tag">GitHub Actions</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="skill-category">
-              <h4 class="skill-category-title">Data Science Tools</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">NumPy</span>
-                <span class="skill-tag">PowerBI</span>
-                <span class="skill-tag">QGIS</span>
-                <span class="skill-tag">Matplotlib</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h4 class="skill-category-title">Databases</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">ChromaDB</span>
-                <span class="skill-tag">Firebase</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h4 class="skill-category-title">Web & Mobile Development</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">Django</span>
-                <span class="skill-tag">Flask</span>
-                <span class="skill-tag">FastAPI</span>
-                <span class="skill-tag">React.js</span>
-                <span class="skill-tag">Next.js</span>
-                <span class="skill-tag">Flutter</span>
-              </div>
-            </div>
-            <div class="skill-category">
-              <h4 class="skill-category-title">AI Automation & Orchestration</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">n8n</span>
-                <span class="skill-tag">CrewAI</span>
-                <span class="skill-tag">LangGraph</span>
-                <span class="skill-tag">LangChain</span>
-                <span class="skill-tag">LlamaIndex</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact-section">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-label">Get In Touch</p>
-          <h2 class="section-title">Contact Me</h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="contact-card">
-              <div class="contact-icon">
-                <span class="icon-phone" style="color: #000;"></span>
-              </div>
-              <h3>Phone</h3>
-              <p><a href="tel:+94772565240">+94 77 2565 240</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="contact-card">
-              <div class="contact-icon">
-                <span class="icon-envelope" style="color: #000;"></span>
-              </div>
-              <h3>Email</h3>
-              <p><a href="mailto:ingallaba@gmail.com">ingallaba@gmail.com</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="contact-card">
-              <div class="contact-icon">
-                <span class="icon-location-pin" style="color: #000;"></span>
-              </div>
-              <h3>Location</h3>
-              <p>Makola, Sri Lanka</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <h2 class="footer-brand">Osada.dev</h2>
-            <p class="footer-text">AI Engineer & Full Stack Developer passionate about building intelligent solutions and exploring cutting-edge technologies.</p>
-            <div class="social-links">
-              <a href="https://github.com/osadainduwara" target="_blank" class="social-link"><span class="icon-github"></span></a>
-              <a href="https://www.linkedin.com/in/osadainduwara" target="_blank" class="social-link"><span class="icon-linkedin"></span></a>
-              <a href="#" class="social-link"><span class="icon-instagram"></span></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="footer-links">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#home-section"><span class="icon-long-arrow-right"></span> Home</a></li>
-                <li><a href="#about-section"><span class="icon-long-arrow-right"></span> About</a></li>
-                <li><a href="#projects-section"><span class="icon-long-arrow-right"></span> Projects</a></li>
-                <li><a href="#resume-section"><span class="icon-long-arrow-right"></span> Resume</a></li>
-                <li><a href="#contact-section"><span class="icon-long-arrow-right"></span> Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-links">
-              <h4>Contact Info</h4>
-              <ul>
-                <li><a href="tel:+94772565240"><span class="icon-phone"></span> +94 77 2565 240</a></li>
-                <li><a href="mailto:ingallaba@gmail.com"><span class="icon-envelope"></span> ingallaba@gmail.com</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Osada Induwara. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Loader -->
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#1a1a1a" />
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#7aff14" />
-      </svg>
+<head>
+  <title>Osada Induwara | AI Engineer & Full Stack Developer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Portfolio of Osada Induwara Gallaba - AI Engineer, Machine Learning Specialist, and Full Stack Developer from Sri Lanka. Expertise in Python, TensorFlow, LLMs, and modern web technologies." />
+  <meta name="keywords"
+    content="AI Engineer, Machine Learning, Python, Full Stack Developer, Sri Lanka, Portfolio, TensorFlow, LangChain, Flutter" />
+  <meta name="author" content="Osada Induwara Gallaba" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://osadainduwara.github.io/" />
+  <meta property="og:title" content="Osada Induwara | AI Engineer Portfolio" />
+  <meta property="og:description"
+    content="AI Engineer & Full Stack Developer specializing in Machine Learning, LLMs, and Web Development" />
+  <meta property="og:image" content="https://osadainduwara.github.io/assets/images/me.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Osada Induwara | AI Engineer Portfolio" />
+  <meta name="twitter:description"
+    content="AI Engineer & Full Stack Developer specializing in Machine Learning, LLMs, and Web Development" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#7aff14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/me.png" />
+  <link rel="apple-touch-icon" href="assets/images/me.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/icomoon.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Google Analytics (placeholder - replace UA-XXXXX with your ID) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX');
+    </script> -->
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
     </div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Osada.dev</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span style="color: var(--text-secondary); font-size: 1.5rem;">☰</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#projects-section" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="#skills-section" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="blog/index.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home-section">
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 hero-content">
+          <p class="hero-label">Welcome to my portfolio</p>
+          <h1 class="hero-title">Osada Induwara<br />Gallaba</h1>
+          <div class="typing-container">
+            <span class="typing-text"></span><span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            AI/ML Engineer & Full‑Stack Developer with 3+ years of hands‑on ML experience, building practical GenAI for
+            web and mobile.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://github.com/OsadaInduwara?tab=repositories" target="_blank" class="btn-glow">
+              <span class="icon-github"></span> View GitHub
+            </a>
+            <a href="#projects-section" class="btn-outline">
+              View Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <div class="about-image-container">
+            <img src="assets/images/me.png" alt="Osada Induwara" class="about-image" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="about-content">
+            <p class="section-label">Get to know me</p>
+            <h2 class="about-title">About Me</h2>
+            <p class="about-text">
+              Sri Lanka–based AI/ML Engineer and Full‑Stack Developer focused on building practical machine learning and
+              generative AI systems, alongside modern web and mobile applications. Experience spans ML/DL model
+              development, RAG chatbots, multi‑agent automation, and end‑to‑end product delivery with
+              Django/Next.js/Flutter.
+            </p>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Name:</span>
+                <span class="info-value">Osada Induwara Gallaba</span>
+              </li>
+              <li>
+                <span class="info-label">Email:</span>
+                <span class="info-value">ingallaba@gmail.com</span>
+              </li>
+              <li>
+                <span class="info-label">Phone:</span>
+                <span class="info-value">+94 77 2565 240</span>
+              </li>
+              <li>
+                <span class="info-label">Location:</span>
+                <span class="info-value">Makola, Sri Lanka</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">My Work</p>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+          <a href="https://github.com/OsadaInduwara" target="_blank" class="project-card">
+            <img src="assets/images/icons/fraud-detection.png" alt="Fraud Detection" class="project-icon" />
+            <h3 class="project-title">Fraud Detection & Electricity Forecasting</h3>
+            <p class="project-tech">Python • Machine Learning • Time Series</p>
+            <p class="project-description">Developed predictive models to detect fraudulent activities and forecast
+              electricity usage using time series analysis and machine learning algorithms.</p>
+            <span class="project-link">View Project →</span>
+          </a>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://github.com/OsadaInduwara" target="_blank" class="project-card">
+            <img src="assets/images/icons/career-guidance.png" alt="Career Guidance" class="project-icon" />
+            <h3 class="project-title">Career Guidance System</h3>
+            <p class="project-tech">Python • ML • Web Development</p>
+            <p class="project-description">Built an intelligent career guidance system that uses machine learning to
+              suggest suitable career paths based on user skills and preferences.</p>
+            <span class="project-link">View Project →</span>
+          </a>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://github.com/OsadaInduwara" target="_blank" class="project-card">
+            <img src="assets/images/icons/deployment-pipeline.png" alt="ML Pipeline" class="project-icon" />
+            <h3 class="project-title">Automated ML Deployment Pipeline</h3>
+            <p class="project-tech">Docker • Jenkins • AWS SageMaker</p>
+            <p class="project-description">Developed an automated CI/CD pipeline for deploying machine learning models
+              in production using Docker, Jenkins, and AWS SageMaker.</p>
+            <span class="project-link">View Project →</span>
+          </a>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+          <a href="https://github.com/OsadaInduwara" target="_blank" class="project-card">
+            <img src="assets/images/icons/chatbot-rag.png" alt="Chatbot RAG" class="project-icon" />
+            <h3 class="project-title">Chatbot Applications with RAG</h3>
+            <p class="project-tech">Python • LangChain • LLM</p>
+            <p class="project-description">Created chatbot applications utilizing retrieval-augmented generation (RAG)
+              techniques for accurate and context-aware responses.</p>
+            <span class="project-link">View Project →</span>
+          </a>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://github.com/OsadaInduwara" target="_blank" class="project-card">
+            <img src="assets/images/icons/dashboard-webapp.png" alt="Dashboard" class="project-icon" />
+            <h3 class="project-title">Dashboard Web Application</h3>
+            <p class="project-tech">React • Django • Data Visualization</p>
+            <p class="project-description">Designed and implemented a comprehensive web application to visualize data
+              insights with React frontend and Django backend.</p>
+            <span class="project-link">View Project →</span>
+          </a>
+        </div>
+        <!-- Project 6 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://github.com/OsadaInduwara" target="_blank" class="project-card">
+            <img src="assets/images/icons/farming-mobile.png" alt="Farming App" class="project-icon" />
+            <h3 class="project-title">Mobile App for Sri Lankan Farmers</h3>
+            <p class="project-tech">Flutter • Firebase • Agriculture</p>
+            <p class="project-description">Developing a mobile application to assist Sri Lankan farmers with
+              agricultural practices using Flutter for cross-platform development.</p>
+            <span class="project-link">View Project →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume PDF Section -->
+  <section class="resume-pdf-section" id="resume-pdf-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">Download</p>
+        <h2 class="section-title">My Resume</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+          <div class="pdf-container">
+            <iframe src="assets/images/resume/osada-ai-eng.pdf" class="pdf-viewer" title="Resume PDF"></iframe>
+          </div>
+          <div class="text-center">
+            <a href="assets/images/resume/osada-ai-eng.pdf" download class="btn-glow">
+              <span class="icon-download"></span> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Timeline Section -->
+  <section class="resume-section" id="resume-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">My Journey</p>
+        <h2 class="section-title">Education & Experience</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="mb-4" style="color: var(--primary); font-weight: 700;">📚 Education</h3>
+
+          <div class="resume-card">
+            <div class="resume-icon">🎓</div>
+            <div class="resume-content">
+              <h3>University of Wolverhampton</h3>
+              <p class="position">Bachelor of Science</p>
+              <p><strong>Computer Science (Software Engineering)</strong></p>
+              <p>Second Class (2nd Division) • Sri Lanka</p>
+            </div>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-icon">📖</div>
+            <div class="resume-content">
+              <h3>Institute of Technology, University of Moratuwa</h3>
+              <p class="position">National Diploma in Technology (NDT)</p>
+              <p><strong>Information Technology</strong></p>
+              <p>Sri Lanka</p>
+            </div>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-icon">📖</div>
+            <div class="resume-content">
+              <h3>GCE Advanced Level</h3>
+              <p class="position">Physical Science Stream</p>
+              <p><strong>Combined Mathematics, Chemistry, Physics</strong></p>
+              <span class="resume-date">2017</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="mb-4" style="color: var(--primary); font-weight: 700;">💼 Experience</h3>
+
+          <div class="resume-card">
+            <div class="resume-icon">💻</div>
+            <div class="resume-content">
+              <h3>Freelance Software Developer</h3>
+              <p class="position">Full Stack Development</p>
+              <p><strong>Machine Learning & Web Development Projects</strong></p>
+              <p>Developed various ML models and web applications for clients, focusing on fraud detection, career
+                guidance systems, RAG chatbots, and automated deployment pipelines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category">
+            <h4 class="skill-category-title">Programming Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">AI/ML Frameworks</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">scikit-learn</span>
+              <span class="skill-tag">Keras</span>
+              <span class="skill-tag">NLTK</span>
+              <span class="skill-tag">Hugging Face</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Generative AI Tools</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">GPT-4</span>
+              <span class="skill-tag">LLaMA</span>
+              <span class="skill-tag">Claude</span>
+              <span class="skill-tag">Gemini API</span>
+              <span class="skill-tag">Grok</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">MLOps & Deployment</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS SageMaker</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-category">
+            <h4 class="skill-category-title">Data Science Tools</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">PowerBI</span>
+              <span class="skill-tag">QGIS</span>
+              <span class="skill-tag">Matplotlib</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Databases</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">ChromaDB</span>
+              <span class="skill-tag">Firebase</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Web & Mobile Development</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Flutter</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">AI Automation & Orchestration</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">n8n</span>
+              <span class="skill-tag">CrewAI</span>
+              <span class="skill-tag">LangGraph</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">LlamaIndex</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="row">
+            <div class="col-12 mb-4">
+              <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p><a href="tel:+94772565240">+94 77 2565 240</a></p>
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p><a href="mailto:ingallaba@gmail.com">ingallaba@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>Makola, Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xeejaabn" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn-glow" style="width: 100%;">
+                Send Message →
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h2 class="footer-brand">Osada.dev</h2>
+          <p class="footer-text">AI Engineer & Full Stack Developer passionate about building intelligent solutions and
+            exploring cutting-edge technologies.</p>
+          <div class="social-links">
+            <a href="https://github.com/osadainduwara" target="_blank" class="social-link" title="GitHub">
+              <span class="icon-github"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/osadainduwara" target="_blank" class="social-link" title="LinkedIn">
+              <span class="icon-linkedin"></span>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <span class="icon-instagram"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home-section">Home</a></li>
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#projects-section">Projects</a></li>
+              <li><a href="#resume-section">Resume</a></li>
+              <li><a href="blog/index.html">Blog</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-links">
+            <h4>Contact Info</h4>
+            <ul>
+              <li><a href="tel:+94772565240">📞 +94 77 2565 240</a></li>
+              <li><a href="mailto:ingallaba@gmail.com">📧 ingallaba@gmail.com</a></li>
+              <li><a href="#">📍 Makola, Sri Lanka</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright ©
+          <script>document.write(new Date().getFullYear());</script> Osada Induwara. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" title="Back to Top">↑</a>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/particles.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

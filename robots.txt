@@ -1,0 +1,6 @@
+# Robots.txt for Osada Induwara Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://osadainduwara.github.io/sitemap.xml
